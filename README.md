@@ -1,6 +1,6 @@
 # Blog-SPA-React Учебный проект по макету Figma
 
-## Ссылка на рабочий сайт развёрнутый через хостинг GitHubPages: [Посмотреть проект]()
+## Ссылка на рабочий сайт развёрнутый через хостинг GitHubPages: [Посмотреть проект](https://blog-spa-react.vercel.app)
 
 ### Untitled UI – FREE Figma UI kit and design system v2.0 - Дизайн разработан и предоставлен в бесплатный доступ автором Jordan Hughes @designer Melbourne, Australia 
 * jordanhughes.co
@@ -13,9 +13,9 @@
 
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) 
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
-![TypeScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
-![React](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![Tailwind](https://img.shields.io/badge/Tailwind%20CSS-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=fff)
+![React](https://img.shields.io/badge/React-%2320232a.svg?logo=react&style=for-the-badge&&logoColor=%2361DAFB)
 ![Markdown](https://img.shields.io/badge/Markdown-purple?style=for-the-badge&logo=markdown&logoSize=amg)
 
 ## Структура проекта
