@@ -1,5 +1,5 @@
 import { forwardRef } from 'react';
-import type { DropdownMenuProps } from '../types/Navigation';
+import type { DropdownMenuProps } from '../../types/Navigation';
 
 const DropdownMenu = forwardRef<HTMLDivElement, DropdownMenuProps>(({subItems, className = ''}, ref) => {
     return ( 
