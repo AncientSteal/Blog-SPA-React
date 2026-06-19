@@ -1,0 +1,128 @@
+@import "tailwindcss";
+
+@layer base {
+    body {
+        @apply bg-base-white;
+    }
+    section {
+        @apply px-4 md:px-10 lg:px-20;
+    }
+
+    button {
+        @apply p-2.5 text-base text-center flex justify-center rounded-lg font-semibold h-fit hover:scale-105 cursor-pointer transform transition-all duration-300 ease-in-out will-change-transform focus:outline-none;
+    }
+
+    a {
+        @apply cursor-pointer transform transition-[text] duration-300 ease-in-out hover:text-brand-900;
+    }
+
+    input {
+        @apply px-4 py-3 border border-neutral-500 rounded-lg text-base text-neutral-500 font-normal focus:shadow-input focus:outline-none focus:border-brand-300 transition-all duration-200 ease-in-out;
+    }
+}
+
+@theme {
+    --color-base-white: #fff;
+    --color-card-white: #fff;
+    --color-brand-50: #F9F5FF;
+    --color-brand-100: #F4EBFF;
+    --color-brand-200: #E9D7FE;
+    --color-brand-300: #D6BBFB;
+    --color-brand-700: #6941C6;
+    --color-brand-900: #42307D;
+    --color-neutral-300: #D4D4D4;
+    --color-neutral-500: #737373;
+    --color-neutral-600: #525252;
+    --color-neutral-900: #171717;
+    --shadow-input: 0 0 10px var(--color-brand-300);
+    --transition-property-card: translate, box-shadow;
+}
+
+    
+html.dark {
+    --color-base-white: #252436;
+    --color-card-white: #302f46;
+    --color-brand-50: #11022b;
+    --color-brand-100: #220347;
+    --color-brand-200: #360074;
+    --color-brand-300: #3f03928e;
+    --color-brand-700: #9e77ed;     
+    --color-brand-900: #d6bbfb;
+    --color-neutral-50: #151120;
+    --color-neutral-300: #374151;   
+    --color-neutral-500: #9ca3af;   
+    --color-neutral-600: #e5e7eb;
+    --color-neutral-700: #e5e7eb;
+    --color-neutral-800: #e5e7eb;
+    --color-neutral-900: #f9fafb;
+    --color-neutral-950: #f9fafb;  
+    --shadow-input: 0 0 10px var(--color-brand-700);
+}
+
+.button {
+    @apply p-2.5 text-base text-center flex justify-center rounded-lg font-semibold h-fit hover:scale-105 cursor-pointer transform transition-all duration-300 ease-in-out will-change-transform focus:outline-none;
+}
+
+.btn-next::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    transition: .5s cubic-bezier(0, 0, .2, 1);
+    background-color: var(--color-brand-700);
+    border-radius: 50%;
+}
+
+.btn-next:hover::before {
+    width: 80px;
+    height: 80px;
+}
+
+.btn-next.swiper-button-disabled {
+    background: var(--color-neutral-500);
+    opacity: .5;
+    pointer-events: none;
+    color: var(--color-base-white)
+}
+
+.btn-prev::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    transition: .5s cubic-bezier(0, 0, .2, 1);
+    background-color: var(--color-brand-700);
+    border-radius: 50%;
+}
+
+.btn-prev:hover::before {
+    width: 80px;
+    height: 80px;
+}
+
+.btn-prev.swiper-button-disabled {
+    background: var(--color-neutral-500);
+    opacity: .5;
+    pointer-events: none;
+    color: var(--color-base-white)
+}
+
+.btn-next svg, .btn-prev svg {
+    position: relative;
+    z-index: 10;
+    transition: stroke 0.3s ease;
+}
+
+.btn-next:hover svg, .btn-prev:hover svg {
+    stroke: var(--color-base-white);
+}
+
+.btn-next.swiper-button-disabled svg, .btn-prev.swiper-button-disabled svg {
+    stroke: var(--color-base-white);
+}

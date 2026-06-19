@@ -1,0 +1,51 @@
+import type { NavigationItem } from "../types/Navigation";
+
+export const BlogIcon = () => (
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
+        <path stroke="#7F56D9" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20M4 19.5A2.5 2.5 0 0 0 6.5 22H20V2H6.5A2.5 2.5 0 0 0 4 4.5z"/>
+    </svg>
+);
+
+export const StoriesIcon = () => (
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
+        <path stroke="#7F56D9" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 2 3 14h9l-1 8 10-12h-9z"/>
+    </svg>
+);
+
+export const VideoIcon = () => (
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
+        <path stroke="#7F56D9" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10"/>
+        <path stroke="#7F56D9" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m10 8 6 4-6 4z"/>
+    </svg>
+);
+
+export const LightIcon = () => (
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 512 512" fill="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M249.5 1.4c-4.1 1.8-8.3 6.9-9 10.9-.3 1.8-.5 15.4-.3 30.4.3 25.6.4 27.3 2.4 29.9 3.9 5.3 7.1 6.9 13.4 6.9s9.5-1.6 13.4-6.9c2-2.6 2.1-4 2.1-32.6s-.1-30-2.1-32.6c-1.1-1.5-3.2-3.7-4.6-4.7-3.3-2.5-11.3-3.2-15.3-1.3m175.9 64.2c-1.7.8-11.7 10.2-22.2 20.7-20.5 20.7-21.3 22-19.7 30.4.9 4.9 6.9 10.9 11.8 11.8 8.4 1.6 9.7.8 30.4-19.7 10.6-10.5 19.9-20.6 20.8-22.4 6.2-13.1-8.1-27.2-21.1-20.8M81.6 71c-4.2 1.3-9.5 6.8-10.7 11.2-2.1 8-.6 10.4 20.4 31.7 10.6 10.6 20.6 19.9 22.4 20.7 12.9 5.6 26.2-7.1 21.3-20.3-1.6-4.1-37.6-40.1-42.5-42.4-4.4-2-6.5-2.2-10.9-.9m159.9 41.6c-32.2 4.9-52.1 13-74 30-27.6 21.4-46.8 52.9-53.2 87.7-2.4 12.6-2.4 38.8 0 51.4 10.9 59 57 105.1 116 116 12.6 2.4 38.8 2.4 51.4 0 51.8-9.6 94.1-46.2 110.7-96 5.5-16.3 7-26.6 7-45.7s-1.5-29.4-7-45.7c-16.6-49.5-59.1-86.6-110.1-95.9-8.6-1.5-34.8-2.7-40.8-1.8M9.5 241.4C2.8 244.3-1 252 .4 259.5c.9 4.7 5.9 10.2 10.4 11.6 2.4.6 13.6.9 31.4.7 26.1-.3 27.8-.4 30.4-2.4 5.3-3.9 6.9-7.1 6.9-13.4s-1.6-9.5-6.9-13.4c-2.6-2-4.2-2.1-31.4-2.3-22.3-.2-29.4 0-31.7 1.1m432 0c-6.7 2.9-10.5 10.6-9.1 18.1.9 4.7 5.9 10.2 10.4 11.6 2.4.6 13.6.9 31.4.7 26.1-.3 27.8-.4 30.4-2.4 5.3-3.9 6.9-7.1 6.9-13.4s-1.6-9.5-6.9-13.4c-2.6-2-4.2-2.1-31.4-2.3-22.3-.2-29.4 0-31.7 1.1m-315 125.5c-5.1 1.3-6.5 2.4-25.7 21.8-15.7 15.8-18.8 19.5-19.7 23-3.2 11.8 7.8 22.7 19.4 19.3 3.2-.9 7.8-5 23.7-20.8 21.4-21.4 22.7-23.4 20.8-31.6-1-4.5-6.1-10.2-9.9-11.1-1.4-.3-3.3-.7-4.1-.9s-2.8-.1-4.5.3m257.4 11.3c-6.9 3.9-9.7 12.7-6.5 20.1.8 1.8 10.1 11.8 20.7 22.4 16.4 16.1 20.1 19.3 23.7 20.3 11.5 3 22.2-7.7 19.1-19.3-.9-3.5-4.1-7.3-20.2-23.6-10.6-10.6-20.6-19.9-22.4-20.7-4.6-2-10.2-1.7-14.4.8m-134.4 55.2c-4.1 1.8-8.3 6.9-9 10.9-.3 1.8-.5 15.4-.3 30.4.3 25.6.4 27.3 2.4 29.9 3.9 5.3 7.1 6.9 13.4 6.9s9.5-1.6 13.4-6.9c2-2.6 2.1-4 2.1-32.6s-.1-30-2.1-32.6c-1.1-1.5-3.2-3.7-4.6-4.7-3.3-2.5-11.3-3.2-15.3-1.3"/>
+    </svg>
+);
+
+export const DarkIcon = () => (
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 512 512" fill="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M179.4 33c-1.7.6-7.9 3.4-13.8 6.5C99.1 73.6 54 136.3 42.3 211c-2.4 16-2.4 50 0 66 7.9 50.1 30.5 94.9 65.4 129.7 57.4 56.9 139.9 79.5 218.4 59.8 41.8-10.6 84-35.6 112-66.6 21-23.1 42.9-59.1 42.9-70.5 0-7.8-7.5-15.4-15.4-15.4-1.9 0-6.8 1.3-10.8 2.9-29.2 11.5-60.7 16.6-88.8 14.2-47.9-4-89.3-22.4-123-54.7-47.1-45.3-69.1-111.5-58.1-175.4 2.3-13.4 5.6-25.2 11.2-39.9 4.5-12 4.7-13.9 1.8-19.7-3.3-6.9-11.4-10.5-18.5-8.4"/>
+    </svg>
+);
+
+export const navLinks: NavigationItem[] = [
+    {label: 'Home', href: '/'},
+    {label: 'Products', href: '#', hasDropdown: true, 
+        children: [
+            { title: 'Blog', description: 'The latest industry news, updates and info.', href: '#', icon: BlogIcon},
+            { title: 'Customer stories', description: 'Learn how our customers are making big changes.', href: '#', icon: StoriesIcon},
+            { title: 'Video tutorials', description: 'Get up and running on new features and techniques.', href: '#', icon: VideoIcon},
+        ]
+    },
+    {label: 'Resources', href: '#', hasDropdown: true,
+        children: [
+            { title: 'Blog', description: 'The latest industry news, updates and info.', href: '#', icon: BlogIcon},
+            { title: 'Customer stories', description: 'Learn how our customers are making big changes.', href: '#', icon: StoriesIcon},
+            { title: 'Video tutorials', description: 'Get up and running on new features and techniques.', href: '#', icon: VideoIcon},
+        ]
+    },
+    {label: 'Pricing', href: '#start-free'},
+]
