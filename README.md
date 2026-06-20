@@ -1,6 +1,6 @@
 # Blog-SPA-React Учебный проект по макету Figma
 
-## Ссылка на рабочий сайт развёрнутый через хостинг GitHubPages: [Посмотреть проект](https://blog-spa-react.vercel.app)
+## Ссылка на рабочий сайт развёрнутый через хостинг Vercel: [Посмотреть проект](https://blog-spa-react.vercel.app)
 
 ### Untitled UI – FREE Figma UI kit and design system v2.0 - Дизайн разработан и предоставлен в бесплатный доступ автором Jordan Hughes @designer Melbourne, Australia 
 * jordanhughes.co
@@ -71,8 +71,8 @@ src/
 │   └── auth.ts                     ← имитация работы сервера
 │
 ├── features/                       ← логические блоки
-│   ├── ThemeToogle.tsx             переключение тёмной/светлой темы сайта
-│   └── validation.ts               валидация
+│   ├── ThemeToggle.tsx             переключение тёмной/светлой темы сайта
+│   └── Validation.tsx               валидация
 │
 ├── types/                          ← типы данных
 ├── data/                           ← массивы исходных данных mockData, navigation
@@ -109,7 +109,7 @@ src/
 
 1. **Клонируйте репозиторий:** 
     ```
-    git clone https://github.com/AncientSteal/
+    git clone https://github.com/AncientSteal/Blog-SPA-React
     ```
 
 2. **Установить зависимости:**

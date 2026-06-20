@@ -30,9 +30,9 @@ function BurgerMenu({ items }: BurgerMenuProps) {
                       </div>
                   </button>
               ) : (
-                  <a href={link.href} className="flex items-center justify-between gap-4">
+                  <Link to={link.href} className="flex items-center justify-between gap-4">
                       {link.label}
-                  </a>
+                  </Link>
               )}
               
               {link.children && isCurrentOpen && (
