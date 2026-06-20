@@ -20,7 +20,7 @@ function SendNewsLetter() {
                         toast.success('We’ll send you news once per week!');
                         console.log(result.token)
                     }
-                } catch (serverError: any) {
+                } catch (serverError: unknown) {
                     if (serverError instanceof Error) {
                         toast.error(serverError.message);
                     } else {

@@ -1,21 +1,23 @@
-import { createContext, useContext, useLayoutEffect, useState, type ReactNode } from "react";
+import { createContext, useLayoutEffect, useState, type ReactNode } from "react";
 import type { AuthContextType, User } from "../types/AuthContext";
 
-const AuthContext = createContext<AuthContextType | undefined>(undefined);
+export const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
 export function AuthProvider({children}: {children : ReactNode}) {
-    const [token, setToken] = useState<string | null>(null);
-    const [user, setUser] = useState<User | null>(null);
+    
+    const [token, setToken] = useState(() => {
+        const savedToken = localStorage.getItem("user_token");
+        return savedToken ? savedToken : null;
+    });
+
+    const [user, setUser] = useState<User | null>(() => {
+        const savedUser = localStorage.getItem("user_data");
+        return savedUser ? JSON.parse(savedUser) : null;
+    });
+
     const [isLoading, setIsLoading] = useState(true);
 
     useLayoutEffect(() => {
-        const savedToken = localStorage.getItem("user_token");
-        const savedUser = localStorage.getItem("user_data");
-
-        if (savedToken && savedUser) {
-            setToken(savedToken);
-            setUser(JSON.parse(savedUser));
-        }
 
         const frameId = requestAnimationFrame(() => {
             document.body.classList.add('app-loaded');
@@ -51,12 +53,4 @@ export function AuthProvider({children}: {children : ReactNode}) {
             {children}
         </AuthContext.Provider>
     )
-}
-
-export function useAuth() {
-    const context = useContext(AuthContext);
-    if (!context) {
-        throw new Error('useAuth must be used within an AuthProvider')
-    }
-    return context;
 }

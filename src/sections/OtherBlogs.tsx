@@ -1,5 +1,5 @@
 import { Link, useParams } from "react-router-dom";
-import { useRef, useState } from "react";
+import { useState } from "react";
 import { blogs } from "../data/mockData";
 import BlogCard from "../components/blog/BlogCard";
 import { SliderPrevBtn, SliderNextBtn } from "../components/ui/SwiperNavigation";
@@ -11,8 +11,6 @@ import 'swiper/css/virtual';
 
 function OtherBlogs() {
 
-    const prevBtnRef = useRef<HTMLButtonElement>(null);
-    const nextBtnRef = useRef<HTMLButtonElement>(null);
     const [firstSlider, setFirstSlider] = useState<SwiperClass | null>(null);
     const [secondSlider, setSecondSlider] = useState<SwiperClass | null>(null);
 
@@ -51,8 +49,8 @@ function OtherBlogs() {
                 </div>
                 <div className="pt-12 md:pt-16 relative">
                     <div className="w-full flex gap-4 z-20 pb-2">
-                        <SliderPrevBtn ref={prevBtnRef}/>
-                        <SliderNextBtn ref={nextBtnRef}/>
+                        <SliderPrevBtn className="other-blogs-prev"/>
+                        <SliderNextBtn className="other-blogs-next"/>
                     </div>
                     <Swiper 
                         spaceBetween={8}
@@ -60,12 +58,9 @@ function OtherBlogs() {
                         modules={[Virtual, Controller, Navigation]}
                         onSwiper={setFirstSlider}
                         controller={{control: secondSlider}}
-                        navigation={true}
-                        onBeforeInit={(swiper: SwiperClass) => {
-                            if (swiper.params.navigation && typeof swiper.params.navigation !== 'boolean') {
-                                swiper.params.navigation.prevEl = prevBtnRef.current;
-                                swiper.params.navigation.nextEl = nextBtnRef.current;
-                            }
+                        navigation={{
+                            prevEl: '.other-blogs-prev',
+                            nextEl: '.other-blogs-next',
                         }}
                         virtual
                         breakpoints={{

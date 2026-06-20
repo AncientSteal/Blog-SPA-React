@@ -5,7 +5,7 @@ import { FormInput } from "../components/ui/FormInput";
 import { useForm } from "../hooks/useForm";
 import { serverAnswer } from "../api/auth";
 import toast from "react-hot-toast";
-import { useAuth } from '../context/AuthContext';
+import { useAuth } from "../hooks/useAuth";
 import { useNavigate } from 'react-router-dom';
 
 function RegistrationPage() {

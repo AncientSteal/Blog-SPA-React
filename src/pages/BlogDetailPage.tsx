@@ -11,8 +11,6 @@ import 'swiper/css/virtual';
 function BlogDetailPage() {
     const { id } = useParams<{id:string}>();
     const currentBlog = blogs.find((item) => item.id === Number(id));
-    const [prevEl, setPrevEl] = useState<HTMLButtonElement | null>(null);
-    const [nextEl, setNextEl] = useState<HTMLButtonElement | null>(null);
 
     function splitText(textBlock:string) {
         return textBlock
@@ -87,8 +85,8 @@ function BlogDetailPage() {
                             slidesPerView={1}
                             modules={[Controller, Navigation]}
                             navigation={{
-                                prevEl,
-                                nextEl,
+                                prevEl: '.blog-detail-prev',
+                                nextEl: '.blog-detail-next',
                             }}
                             breakpoints={{
                                 1300: {slidesPerView: 2},
@@ -106,8 +104,8 @@ function BlogDetailPage() {
                             })}
                         </Swiper>
                         <div className="w-full flex gap-4 z-20 pt-2">
-                            <SliderPrevBtn ref={setPrevEl}/>
-                            <SliderNextBtn ref={setNextEl}/>
+                            <SliderPrevBtn className="blog-detail-prev"/>
+                            <SliderNextBtn className="blog-detail-next"/>
                         </div>
                     </div>
                 ) : (

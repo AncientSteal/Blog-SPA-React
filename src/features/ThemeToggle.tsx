@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { LightIcon, DarkIcon } from "../data/navigation";
+import { LightIcon, DarkIcon } from "../data/themeIcons";
 
 export function ThemeToggle() {
     const [isDark, setIsDark] = useState(() => {

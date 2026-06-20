@@ -42,12 +42,12 @@ export const serverAnswer = async (data: FormValidationProps): Promise<ServerSuc
     } catch (error: unknown) {
         if (error instanceof Error) {
             if (error.name === 'AbortError') {
-                throw new Error('Server is not responding. Please try again later.')
+                throw new Error('Server is not responding. Please try again later.', { cause: error })
             }
             throw error;
         }
         
-        throw new Error('An unexpected error occurred');
+        throw new Error('An unexpected error occurred', { cause: error });
 
     } finally {
         clearTimeout(timeout);

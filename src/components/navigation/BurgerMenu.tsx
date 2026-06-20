@@ -2,7 +2,7 @@ import { useState } from 'react';
 import type { BurgerMenuProps } from '../../types/Navigation';
 import DropdownMenu from './DropdownMenu';
 import { Link } from 'react-router-dom';
-import { useAuth } from '../../context/AuthContext';
+import { useAuth } from '../../hooks/useAuth';
 
 function BurgerMenu({ items }: BurgerMenuProps) {
 

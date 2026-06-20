@@ -4,7 +4,7 @@ import { navLinks } from '../data/navigation';
 import DropdownMenu from '../components/navigation/DropdownMenu';
 import { Link } from 'react-router-dom';
 import { ThemeToggle } from '../features/ThemeToggle';
-import { useAuth } from '../context/AuthContext';
+import { useAuth } from '../hooks/useAuth';
 
 
 function Header() {
