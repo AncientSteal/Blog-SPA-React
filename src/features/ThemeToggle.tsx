@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { LightIcon, DarkIcon } from "../components/ui/icons";
+import { LightIcon, DarkIcon } from "../components/ui/Icons";
 export function ThemeToggle() {
     const [isDark, setIsDark] = useState(() => {
         const savedTheme = localStorage.getItem('theme');

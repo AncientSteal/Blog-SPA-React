@@ -1,5 +1,5 @@
 import type { NavigationItem } from "../types/Navigation";
-import { BlogIcon, StoriesIcon, VideoIcon } from "../components/ui/icons";
+import { BlogIcon, StoriesIcon, VideoIcon } from "../components/ui/Icons";
 
 
 export const navLinks: NavigationItem[] = [
