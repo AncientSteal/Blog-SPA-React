@@ -1,7 +1,6 @@
-import { createContext, useLayoutEffect, useState, type ReactNode } from "react";
-import type { AuthContextType, User } from "../types/AuthContext";
-
-export const AuthContext = createContext<AuthContextType | undefined>(undefined);
+import { useLayoutEffect, useState, type ReactNode } from "react";
+import type { User } from "../types/AuthContext";
+import { AuthContext } from "./auth-context-core";
 
 export function AuthProvider({children}: {children : ReactNode}) {
     

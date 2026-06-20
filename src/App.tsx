@@ -68,7 +68,7 @@ function App() {
                 <Route path="/" element={
                     <main>
                       <HeaderTitle searchValue={searchValue} onSearchChange={onSearchValue} />
-                      <BlogCatalog query={searchValue} baseQuantity={6}/>
+                      <BlogCatalog query={searchValue} key={searchValue} baseQuantity={6}/>
                       <AdditionalContent/>
                       <SendNewsLetter/>
                       <LinksBlog/>

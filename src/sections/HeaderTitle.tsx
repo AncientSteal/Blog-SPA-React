@@ -16,7 +16,7 @@ function HeaderTitle({searchValue, onSearchChange}:HeaderTitleProps) {
                             <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
                         </svg>
                     </div>
-                    <input onChange={(event) => onSearchChange(event.target.value)} value={searchValue} type="search" placeholder="Search" className="flex justify-start bg-base-white py-3 pl-10 pr-4 text-base rounded-lg border-1 border-neutral-300"/>
+                    <input onChange={(event) => onSearchChange(event.target.value)} value={searchValue} type="search" placeholder="Search" className="flex justify-start bg-base-white py-3 pl-10 pr-4 text-base rounded-lg border border-neutral-300"/>
                 </div>
                 </search>
             </div>

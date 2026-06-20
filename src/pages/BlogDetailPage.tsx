@@ -1,5 +1,4 @@
 import { blogs } from "../data/mockData";
-import { useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import type { BlogContentBlock } from "../types/Blog";
 import { SwiperSlide, Swiper } from "swiper/react";

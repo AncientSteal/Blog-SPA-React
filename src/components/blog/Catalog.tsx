@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import BlogCard from "./BlogCard";
 import { blogs } from "../../data/mockData";
 
@@ -10,10 +10,6 @@ interface BlogCatalogProps {
 function BlogCatalog({ query, baseQuantity }: BlogCatalogProps) {
 
     const [loadedCards, setLoadedCards] = useState(baseQuantity);
-
-    useEffect(() => {
-        setLoadedCards(baseQuantity);
-    }, [query])
 
     const filteredBlogs = blogs.filter(blog => {
         const searchString = `${blog.title} ${blog.short} ${blog.author_name} ${blog.category}`.toLowerCase();
