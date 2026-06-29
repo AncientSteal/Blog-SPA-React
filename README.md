@@ -1,4 +1,4 @@
-[![CI (Code Quality and Build)](https://github.com/AncientSteal/Blog-SPA-React)](https://github.com/AncientSteal/Blog-SPA-React) 
+[![CI (Code Quality and Build)](https://github.com/AncientSteal/Blog-SPA-React/ci.yml/badge.svg)](https://github.com/AncientSteal/Blog-SPA-React/ci.yml/badge.svg) 
 # Blog-SPA-React Учебный проект по макету Figma
 
 ## Ссылка на рабочий сайт развёрнутый через хостинг Vercel: [Посмотреть проект](https://blog-spa-react.vercel.app)
